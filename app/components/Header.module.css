@@ -1,0 +1,98 @@
+.siteMenu{
+    background-color: #38509e;
+    padding-top: 15 px;
+}
+.header{
+    display: flex;
+    
+    padding: 10px;
+}
+.headerLinks{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.25rem;
+}
+.searchIcon{
+    width: 20px;
+    height: 20px;
+    z-index: 1000;
+}
+.searchInput{
+    border: none;
+    outline: none;
+    background-color: white;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+.slogan{
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #6c757d;
+    text-transform: uppercase;
+}
+.phone{
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+}
+.callback{
+    padding: 8px 35px;
+    font-size: 17px;
+    border: 2px solid #c1c9e1;
+    font-weight: 700;
+    color: #38509e;
+    text-transform: uppercase;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.callback:hover{
+    border: 2px solid #38509e;
+}
+.logoBlock{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.phoneBlock{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.toggleIcon{
+    display: none;
+  }
+@media screen and (max-width: 768px) {
+    .toggleIcon{
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+    }
+    .headerLinks, .logoBlock, .phoneBlock{
+      flex-direction: column;
+    }
+    .phoneBlock{
+      justify-content: center;
+    }
+    .slogan{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .phone{
+        font-size: 16px;
+    }
+  }

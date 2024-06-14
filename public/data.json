@@ -1,0 +1,146 @@
+{
+    "main" : {
+        "phone" : "+7 (999) 999-99-99",
+        "email" : "wqXKk@example.com",
+        "scrollProjects":
+        [
+            {
+                "image": "/images/projects/1.jpeg",
+                "title": "Название проекта",
+                "description": "Описание проекта",
+                "link": "/projects/1"
+            },
+            {
+                "image": "/images/projects/2.jpeg",
+                "title": "Название проекта",
+                "description": "Описание проекта",
+                "link": "/projects/2"
+            },
+            {
+                "image": "/images/projects/3.jpeg",
+                "title": "Название проекта",
+                "description": "Описание проекта",
+                "link": "/projects/3"
+            },
+            {
+                "image": "/images/projects/4.jpeg",
+                "title": "Название проекта",
+                "description": "Описание проекта",
+                "link": "/projects/4"
+            }
+        ],
+        "about": "ООО «Эксперт-Сервис» было создано в 2017 г. группой специалистов, опыт каждого из которых в эксплуатации зданий и промышленных комплексов более 15 лет. Предприятие ООО «Эксперт-Сервис» создавалось в первую очередь для качественного комплексного обслуживания объектов недвижимости, как одно из предприятий группы инженерных компаний «ИнТехно».",
+        "news": [
+            {
+                "title": "Новость",
+                "date": "12.12.2022",
+                "content": "Описание новости",
+                "link": "/news/1"
+            },
+            {
+                "title": "Новость",
+                "date": "12.12.2022",
+                "content": "Описание новости",
+                "link": "/news/2"
+            },
+            {
+                "title": "Новость",
+                "date": "12.12.2022",
+                "content": "Описание новости",
+                "link": "/news/3"
+            }
+        ],
+        "services": [
+            {
+
+                "title": "Услуга",
+                "image": "/images/services/1.jpg",
+                "link": "/services/1"
+            },
+            {
+                "title": "Услуга",
+                "image": "/images/services/2.jpg",
+                "link": "/services/2"
+            },
+            {
+                "title": "Услуга",
+                "image": "/images/services/3.jpg",
+                "link": "/services/3"
+            },
+            {
+                "title": "Услуга",
+                "image": "/images/services/4.jpg",
+                "link": "/services/4"
+            },
+            {
+                "title": "Услуга",
+                "image": "/images/services/5.jpg",
+                "link": "/services/5"
+            }
+        ],
+        "reviews": [
+            {
+                "image": "/images/reviews/1.jpg",
+                "title": "Отзыв",
+                "description": "Описание отзыва",
+                "link": "/reviews/1"
+            },
+            {   
+                "image": "/images/reviews/2.jpg",
+                "title": "Отзыв",
+                "description": "Описание отзыва",
+                "link": "/reviews/2"
+            }
+        ],
+        "contact": [
+            {
+                "title": "Адрес",
+                "description": "660000 Красноярский край,<br/> г.Красноярск,<br/> ул. Телевизорная, 1 стр. 18, 4 этаж,<br/> Офис 29. а/я 12088"
+            },
+            {
+                "title": "Телефон",
+                "description": "+7 391 2180214"
+            },
+            {
+                "title": "E-mail",
+                "description": "wqXKk@example.com"
+            }
+        ],
+        "footer": {
+            "title": "ООО «Эксперт-Сервис» 2019",
+            "links":{
+                "facebook": "https://www.facebook.com/ekspertservis/",
+                "vk": "https://vk.com/ekspertservis"
+            }
+        }        
+    },
+    "projects":[
+        {
+            "image": "/images/projects/1.jpeg",
+            "title": "Название проекта",
+            "date": "12.12.2022",
+            "link": "/projects/1"
+        },
+        {
+            "image": "/images/projects/2.jpeg",
+            "title": "Название проекта",
+            "date": "12.12.2022",
+            "link": "/projects/2"
+        },
+        {
+            "image": "/images/projects/3.jpeg",
+            "title": "Название проекта",
+            "date": "12.12.2022",
+            "link": "/projects/3"
+        },
+        {
+            "image": "/images/projects/4.jpeg",
+            "title": "Название проекта",
+            "date": "12.12.2022",
+            "link": "/projects/4"
+        }
+    ],
+    "about":{
+        "text" : ""
+    }
+}

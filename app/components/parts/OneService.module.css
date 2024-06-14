@@ -1,0 +1,22 @@
+.oneService{
+    display: flex;
+    margin-bottom: 50px;
+}
+.serviceImage{
+    width: 160px;
+    aspect-ratio: 1;
+    padding-right: 15px;
+    margin-top: 4px;
+    margin-bottom: 24px;
+    box-sizing: content-box;
+}
+@media screen and (max-width: 768px) {
+    .oneService{
+        flex-direction: column;
+    }
+    .serviceImage{
+        width: 100%;
+        padding-right: 0;
+    }
+    
+}
