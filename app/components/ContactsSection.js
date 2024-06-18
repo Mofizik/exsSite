@@ -10,21 +10,19 @@ const ContactsSection = () => {
                     <div className="contactTitle">Адрес:</div>
 
                     <p className="contactText">
-                      660000 Красноярский край,
+                      660020 Красноярский край,
                       <br/>
                       г.Красноярск,
                       <br/>
-                      ул. Телевизорная, 1 стр. 18, 4 этаж, 
-                      <br/>
-                      Офис 29. а/я 12088
+                      Дудинская 3/2г 
                     </p>
                 </div>
                 <div className="contact">
                     <div className="contactTitle">Телефон:</div>
                     <p className="contactText">
-                      +7 391 2180214
+                      2-918-860
                       <br/>
-                      <Link className='link' href=''>Заказать обратный звонок</Link>
+                      <Link className='link' href='/contacts'>Заказать обратный звонок</Link>
                     </p>
                     
                 </div>

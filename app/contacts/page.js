@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import CompletedProjects from '../components/CompletedProjects'
 import Footer from '../components/Footer'
 import Link from 'next/link'
+import ContactFormFeedBack from '../components/parts/ContactFormFeedBack'
 export const metadata = {
     title: "Контакты"
 }
@@ -52,39 +53,7 @@ const page = () => {
                     <h2 className="title">Форма для обратной связи</h2>
                     <div className="card">
                         <div className="cardBody">
-                            <form action="">
-                                <div className="cardGroup">
-                                    <label htmlFor="name" className="cardLabel">
-                                        Ваше имя
-                                        <span className="asteriskField">*</span>
-                                    </label>
-                                    <div className="cardInputContainer">
-                                        <input className="cardInput" type="text" placeholder="Имя" id='name'/>
-                                    </div>
-                                </div>
-                                <div className="cardGroup">
-                                    <label htmlFor="phone" className="cardLabel">Номер телефона
-                                    <span className="asteriskField">*</span>
-                                    </label>
-                                    <div className="cardInputContainer"><input type="text" id="phone" className="cardInput" /></div>
-                                </div>
-                                <div className="cardGroup">
-                                    <label htmlFor="email" className="cardLabel">
-                                    E-mail
-                                    <span className="asteriskField">*</span>
-                                    </label>
-                                    <div className="cardInputContainer"><input type="text" id="email" className="cardInput" /></div>
-                                </div>
-                                
-                                <div className="cardGroup">
-                                    <label htmlFor="message" id="message" className="cardLabel">
-                                    Сообщение
-                                    <span className="asteriskField">*</span>
-                                    </label>
-                                    <div className="cardInputContainer"><textarea name="" id="" cols="40" rows="4" className="cardInput"></textarea></div>
-                                </div>
-                                <div className='cardButtonContainer'><button className="buttonPrimary ">Отправить</button></div>
-                            </form>
+                            <ContactFormFeedBack></ContactFormFeedBack>
                         </div>
                     </div>
                     </div>

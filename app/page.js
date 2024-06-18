@@ -3,7 +3,6 @@ import Header from "./components/Header"
 import ScrollProjects from "./components/ScrollProjects"
 import AboutSection from "./components/AboutSection"
 import NewsSection from "./components/NewsSection"
-import ServicesSection from "./components/ServicesSection"
 import ReviewsSection from "./components/ReviewsSection"
 import ContactsSection from "./components/ContactsSection"
 import Footer from "./components/Footer"
@@ -26,7 +25,6 @@ export default function Home() {
       </div>
       
       <NewsSection></NewsSection>
-      <ServicesSection></ServicesSection>
       <ReviewsSection></ReviewsSection>
       <ContactsSection></ContactsSection>
       <Footer></Footer>

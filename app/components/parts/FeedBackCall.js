@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react'
-
+import emailjs from '@emailjs/browser'
 const FeedBackCall = ({ Display, CloseForm }) => {
   const [phone, setPhone] = useState('')
   const [name, setName] = useState('')
@@ -24,7 +24,25 @@ const FeedBackCall = ({ Display, CloseForm }) => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [Display, CloseForm])
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_v3ldjsa', 'template_xca7abn', form.current, {
+        publicKey: '5z210yM3PaitS8WcN',
+      })
+      .then(
+        () => {
+          alert('Сообщение отправлено!');
+          CloseForm()
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <div ref={formRef} className="feedBackContent">
       <div className="feedBackHeader">
@@ -39,7 +57,7 @@ const FeedBackCall = ({ Display, CloseForm }) => {
         <div className="feedBackInfo">
           Вы можете заказать обратный звонок. Наши менеджеры будут рады ответить на Ваши вопросы.
         </div>
-        <form action="" id="feedBackForm">
+        <form onSubmit={sendEmail} ref={form} id="feedBackForm">
           <div className="formGroup">
             <label className="formLabel" htmlFor="feedBackPhone">
               Номер телефона
@@ -50,7 +68,8 @@ const FeedBackCall = ({ Display, CloseForm }) => {
                 type="text"
                 className="formInput formControl"
                 id="feedBackPhone"
-                name="phone"
+                name="user_phone"
+                required
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
@@ -64,9 +83,10 @@ const FeedBackCall = ({ Display, CloseForm }) => {
             <div>
               <input
                 type="text"
+                required
                 className="formInput formControl"
                 id="feedBackName"
-                name="name"
+                name="user_name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -79,6 +99,7 @@ const FeedBackCall = ({ Display, CloseForm }) => {
             <div>
               <textarea
                 className="formInput formControl"
+                required
                 id="feedBackMessage"
                 name="message"
                 value={message}
@@ -87,7 +108,7 @@ const FeedBackCall = ({ Display, CloseForm }) => {
             </div>
           </div>
           <div className="formGroup">
-            <button className="buttonPrimary" type="submit">
+            <button className="buttonPrimary" value="Send" type="submit">
               Отправить
             </button>
           </div>

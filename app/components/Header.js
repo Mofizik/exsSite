@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect} from 'react'
 import styles from './Header.module.css'
 import Link from "next/link"
 import tailwindConfig from '@/tailwind.config'
@@ -16,14 +16,14 @@ const Header = () => {
         setSlogan(window.innerWidth > 768 ? 
             (<div>
                 <h2 className={styles.slogan}>
-                эксплуатация
+                комплексные
                 <br />
-                и ремонт
+                инженерные
                 <br />
-                сооружений
+                решения
                 <br />
                 </h2>
-            </div>) : (<h2 className={styles.slogan}>эксплуатация и ремонт сооружений</h2>))
+            </div>) : (<h2 className={styles.slogan}>комплексные инженерные решения</h2>))
     }, [])
     const openFeedBack = () => {
         console.log('Заказать звонок')
@@ -40,6 +40,7 @@ const Header = () => {
         console.log('Открыть меню')
         setLinksDisplay(linksDisplay === 'flex' ? 'none' : 'flex')
     }
+    
     return (
         <div id="header">
             <section className={styles.siteMenu}>
@@ -51,9 +52,8 @@ const Header = () => {
                                 <li className={styles.headerLinks}><Link href="/" >главная</Link></li>
                                 <li className={styles.headerLinks}><Link href="/about" >о компании</Link></li>
                                 <li className={styles.headerLinks}><Link href="/news" >новости</Link></li>
-                                <li className={styles.headerLinks}><Link href="/services" >услуги</Link></li>
-                                <li className={styles.headerLinks}><Link href="/price" >цены</Link></li>
                                 <li className={styles.headerLinks}><Link href="/projects" >проекты</Link></li>
+                                <li className={styles.headerLinks}><Link href="/documents" >документы</Link></li>
                                 <li className={styles.headerLinks}><Link href="/vacansii" >вакансии</Link></li>
                                 <li className={styles.headerLinks}><Link href="/contacts" >контакты</Link></li>
                             </ul>
@@ -69,7 +69,7 @@ const Header = () => {
                             {slogan}
                         </div>
                         <div className={styles.phoneBlock}>
-                            <h3 className={styles.phone}>+7 391 2180214</h3>
+                            <h3 className={styles.phone}>2-918-860</h3>
                             <button onClick={openFeedBack} className={styles.callback}>заказать звонок</button>
                         </div>
                     </div>
