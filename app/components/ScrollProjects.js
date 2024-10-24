@@ -2,9 +2,16 @@
 import React, { useState, useEffect } from 'react';
 import styles from './scrollProjects.module.css';
 import Link from 'next/link';
-import { projects } from '@/public/source/projects';
 const ScrollProject = () => {
-  const images = projects
+
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch('/source/projects.json')
+      .then(res => res.json())
+      .then(data => setProjects(data))
+  }, [])
+  const images = projects 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [nextIndex, setNextIndex] = useState(null);
   const [direction, setDirection] = useState('');

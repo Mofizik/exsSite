@@ -46,12 +46,13 @@ const Header = () => {
             <section className={styles.siteMenu}>
                 <div className="container">
                     <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                        <div style={{paddingTop: "15px", paddingBottom: "15px"}}>
+                        <div className={styles.headerContent}>
                             <button onClick={openLinks}><img className={styles.toggleIcon} src="/images/toggleIcon.svg" alt="" /></button>
-                            <ul style={{display: linksDisplay, gap: '1rem', listStyleType: 'none', margin: '0', padding: '0'}} className={styles.headerLinks}>
+                            <ul style={{display: linksDisplay, width: '100%', justifyContent: 'space-between', listStyleType: 'none', margin: '0', padding: '0'}} className={styles.headerLinks}>
                                 <li className={styles.headerLinks}><Link href="/" >главная</Link></li>
                                 <li className={styles.headerLinks}><Link href="/about" >о компании</Link></li>
                                 <li className={styles.headerLinks}><Link href="/news" >новости</Link></li>
+                                <li className={styles.headerLinks}><Link href="/service" >обслуживание</Link></li>
                                 <li className={styles.headerLinks}><Link href="/projects" >проекты</Link></li>
                                 <li className={styles.headerLinks}><Link href="/documents" >документы</Link></li>
                                 <li className={styles.headerLinks}><Link href="/vacansii" >вакансии</Link></li>
@@ -69,7 +70,7 @@ const Header = () => {
                             {slogan}
                         </div>
                         <div className={styles.phoneBlock}>
-                            <h3 className={styles.phone}>2-918-860</h3>
+                            <h3 className={styles.phone}>+7 (391)-291-88-60</h3>
                             <button onClick={openFeedBack} className={styles.callback}>заказать звонок</button>
                         </div>
                     </div>

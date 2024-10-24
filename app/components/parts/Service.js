@@ -1,13 +1,16 @@
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
 const Service = (props) => {
   return (
-    <div className='service'>
-        <Link href={props.link}><img src={props.image} className="serviceImage" alt="" /></Link>
-        <Link href={props.link} className="serviceTitle">
-            {props.title}
-        </Link>
-        <Link href={props.link} className='serviceLink'><button className="buttonPrimary">Подробнее...</button></Link>
+    <div className='projectItem'>
+        <div className='projectImage'>
+            <img src={props.image} alt="" />
+        </div>
+        <div className='projectText'>
+            <Link href={props.source}><h4 className="sidePageTitle">{props.title}</h4></Link>
+            {props.description}
+
+        </div>
     </div>
   )
 }

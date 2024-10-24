@@ -26,17 +26,23 @@ const page = () => {
                                   <th>Дата обновления</th>
                                   <th>Файл</th>
                               </tr>
-                              
+                                  <tr>
+                                    <td>Карточка предприятия</td>
+                                    <td>18.06.2024</td>
+                                    <td
+                                    ><a className="link" href="/documents/Карточка предприятия.docx" target="_blank" rel="noopener noreferrer">Скачать файл</a>
+                                    </td>
+                                  </tr>
                                   <tr>
                                       <td>СРО.pdf</td>
                                       <td>18.06.2024</td>
-                                      <td><a className="link" href="/documents/СРО.pdf" target="_blank" rel="noopener noreferrer">Скачать файл</a></td>
+                                      <td><a className="link" href="/documents/СРО.pdf" target="_blank" rel="noopener noreferrer">Открыть файл</a></td>
                                   </tr>
                               
                                   <tr>
                                       <td>Выписка лицензии МЧС.pdf</td>
                                       <td>18.06.2024</td>
-                                      <td><a className="link" href="/documents/выписка лицензия МЧС.pdf" target="_blank" rel="noopener noreferrer">Скачать файл</a></td>
+                                      <td><a className="link" href="/documents/выписка лицензия МЧС.pdf" target="_blank" rel="noopener noreferrer">Открыть файл</a></td>
                                   </tr>
                           </tbody></table>
                       </div>

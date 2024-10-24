@@ -7,6 +7,13 @@
     
     padding: 10px;
 }
+.headerContent{
+    width: 100%; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center
+}
 .headerLinks{
     font-weight: 700;
     text-transform: uppercase;
@@ -42,7 +49,6 @@
     font-size: 1.4rem;
     color: #6c757d;
     text-transform: uppercase;
-    margin-right: 0.5rem;
 }
 .callback{
     padding: 8px 35px;
@@ -64,10 +70,10 @@
     box-sizing: border-box;
 }
 .phoneBlock{
-    width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
     padding: 15px 0;
     box-sizing: border-box;
 }
@@ -82,8 +88,11 @@
       position: relative;
       cursor: pointer;
     }
-    .headerLinks, .logoBlock, .phoneBlock{
+    .headerContent, .headerLinks, .logoBlock, .phoneBlock{
       flex-direction: column;
+    }
+    .headerContent{
+        align-items: normal;
     }
     .phoneBlock{
       justify-content: center;

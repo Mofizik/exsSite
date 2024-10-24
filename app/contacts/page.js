@@ -18,7 +18,7 @@ const page = () => {
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item"><Link href="/" className='link'>Главная страница</Link></li>
-                            <li className="breadcrumb-item"><Link href="/news">Контакты</Link></li>
+                            <li className="breadcrumb-item">Контакты</li>
                         </ol>
                     </nav>
                         <h1 className="title">Контакты</h1>
@@ -27,24 +27,24 @@ const page = () => {
                                 <div className="contactTitle">Адрес:</div>
 
                                 <p>
-                                660000 Красноярский край,
+                                660020 Красноярский край,
                                 <br/>
                                 г.Красноярск,
                                 <br/>
-                                ул. Телевизорная, 1 стр. 18
+                                Дудинская 3/2г 
                                 </p>
                             </div>
                             <div className="contactPhone">
                                 <div className="contactTitle">Телефон:</div>
                                 <p>
-                                    8-800-222-80-85
+                                    +7 (391)-291-88-60
                                 </p>
                                 
                             </div>
                             <div className="contactEmail">
                                 <div className="contactTitle">E-mail:</div>
                                 <p>
-                                sale@exs24.ru
+                                    exs24@yandex.ru
                                 </p>
                                 
                         </div>

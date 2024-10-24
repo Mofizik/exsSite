@@ -1,53 +1,32 @@
-import React from 'react'
-import Header from '@/app/components/Header'
-import Footer from '@/app/components/Footer'
-import CompletedProjects from '@/app/components/CompletedProjects'
-import Link from 'next/link'
-import { news } from '@/public/source/news'
+import fs from 'fs';
+import path from 'path';
+import React from 'react';
+import PageContent from './PageContent';
+
+export const dynamicParams = true;
+
 export const generateStaticParams = async () => {
-    return news.map(item => ({
-      newsid: item.id.toString(),
-    }))
-  }
-const page = ({params}) => {
-  const oneNews = news.find(item => item.id == params.newsid)
-  console.log('oneNews', oneNews)
+  // Construct the full path to the JSON file
+  const filePath = path.join(process.cwd(), 'public', 'source', 'news.json');
+  
+  // Read the file content
+  const fileContent = fs.readFileSync(filePath, 'utf8');
+  
+  // Parse the JSON content
+  const news = JSON.parse(fileContent);
+  
+  // Map the news items to params
+  return news.map(item => ({
+    newsid: item.id.toString(),
+    fallback: 'blocking',
+    revalidate: 3600
+  }));
+};
+
+const Page = ({ params }) => {
   return (
-    <main>
-
-<Header></Header>
-        <div className="section">
-            <div className="container">
-                <div className="sidePage">
-                    <div className="leftPart">
-                        <nav aria-label="breadcrumb">
-                            <ol className="breadcrumb">
-                                <li className="breadcrumb-item"><Link href="/" className='link'>Главная страница</Link></li>
-                                <li className="breadcrumb-item"><Link href="/news" className='link'>Новости</Link></li>
-                                <li className="breadcrumb-item active" aria-current="page">{oneNews.title}</li>
-                            </ol>
-                        </nav>
-                        <h1 className="title">{oneNews.title}</h1>
-                        <p>
-                            <img className="fluid" src={oneNews.image} alt="" />
-                        </p>
-                        <div className="newsDate">
-                            <span className="date">{oneNews.date}</span>
-                            <span> | </span>
-                
-                            <Link href='/news' className='small blue'>Новости</Link>
-                        </div>
-                        <hr></hr>
-                        {oneNews.text}
-                        
-                    </div>
-                    <CompletedProjects></CompletedProjects>
-                </div>
-            </div>
-        </div>
-        <Footer></Footer>
-    </main>
-  )
-}
-
-export default page
+    <PageContent params={params} />
+  );
+};
+export const revalidate = 3600;
+export default Page;

@@ -37,7 +37,6 @@ const page = () => {
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/" className='link'>Главная страница</Link></li>
-                                <li className="breadcrumb-item"><Link href="/news" className='link'>О компании</Link></li>
                                 <li className="breadcrumb-item current" aria-current="page">{title}</li>
                             </ol>
                         </nav>

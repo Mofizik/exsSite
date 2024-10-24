@@ -20,7 +20,7 @@ const ContactsSection = () => {
                 <div className="contact">
                     <div className="contactTitle">Телефон:</div>
                     <p className="contactText">
-                      2-918-860
+                    +7 (391)-291-88-60
                       <br/>
                       <Link className='link' href='/contacts'>Заказать обратный звонок</Link>
                     </p>
@@ -29,7 +29,7 @@ const ContactsSection = () => {
                 <div className="contact">
                     <div className="contactTitle">E-mail:</div>
                     <p className="contactText">
-                      sale@exs24.ru
+                      exs24@yandex.ru
                       <br/>
                       <Link className='link' href='/contacts'>Форма для обратной связи</Link>
                     </p>

@@ -1,0 +1,52 @@
+[
+    {
+        "image": "/images/projects/1.jpeg",
+        "title": "Название проекта",
+        "link": "/projects/1",
+        "date": "12.12.2022",
+        "source": "/projects/1",
+        "text": "Описание проекта",
+        "description": "Описание проекта",
+        "id": "1"
+    },
+    {
+        "image": "/images/projects/2.jpeg",
+        "title": "Название проекта",
+        "date": "12.12.2022",
+        "link": "/projects/2",
+        "source": "/projects/2",
+        "text": "Описание проекта",
+        "description": "Описание проекта",
+        "id": "2"
+    },
+    {
+        "image": "/images/projects/3.jpeg",
+        "title": "Название проекта",
+        "date": "12.12.2022",
+        "link": "/projects/3",
+        "source": "/projects/3",
+        "text": "Описание проекта",
+        "description": "Описание проекта",
+        "id": "3"
+    },
+    {
+        "image": "/images/projects/4.jpeg",
+        "title": "Название проекта",
+        "date": "12.12.2022",
+        "link": "/projects/4",
+        "source": "/projects/4",
+        "text": "Описание проекта",
+        "description": "Описание проекта",
+        "id": "4"
+    },
+    {
+        "image": "/images/projects/5.jpeg",
+        "title": "Название проекта",
+        "date": "12.12.2022",
+        "link": "/projects/5",
+        "source": "/projects/5",
+        "text": "Описание проекта",
+        "description": "Описание проекта",
+        "id": "5"
+    }
+]

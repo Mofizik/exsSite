@@ -1,9 +1,15 @@
-import React from 'react'
+'use client'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import NewsItem from './parts/NewsItem'
 import tailwindConfig from '@/tailwind.config'
-import { news } from '@/public/source/news'
 const NewsSection = () => {
+
+  const [news, setNews] = useState([])
+
+  useEffect(() => {
+    fetch('/source/news.json').then(res => res.json()).then(data => setNews(data))
+  }, [])
   return (
     <div className="section">
         <div className="container">
@@ -11,7 +17,7 @@ const NewsSection = () => {
                 <h1 className="title">Новости</h1>
                 <div className="news">
                     <div className="newsList">
-                        {news.map(news => <NewsItem key={news.id} {...news} />)}
+                      {news.slice(0, 3).map(newsItem => <NewsItem key={newsItem.id} {...newsItem} />)}
                     </div>
                     <div className='center'>
                       <Link href='/news'><button className="buttonPrimary , newsButton">Все новости...</button></Link>

@@ -18,7 +18,7 @@ const About = () => {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item"><Link href="/" className='link'>Главная страница</Link></li>
-                <li className="breadcrumb-item"><Link href="/news">О компании</Link></li>
+                <li className="breadcrumb-item">О компании</li>
               </ol>
             </nav>
 
