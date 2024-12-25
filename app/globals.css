@@ -615,10 +615,22 @@ hr{
 .toggleIcon{
   display: none;
 }
+.vacanciiCity{
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.vacanciiTitle{
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+.vacanciiList li{
+  margin-bottom: 0.5rem;
+}
 .vacanciiList li::marker{
   content: '';
   width: 0px;
 }
+
 
 @media screen and (max-width: 768px) {
   .toggleIcon{
