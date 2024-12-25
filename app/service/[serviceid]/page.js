@@ -15,7 +15,7 @@ export const generateStaticParams = async () => {
     return services.map(item => ({
       serviceid: item.id.toString(),
       fallback: 'blocking',
-      revalidate: 3600
+      revalidate: 10
     }));
   }
 const page = ( {params} ) => {
