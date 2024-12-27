@@ -8,7 +8,7 @@ const NewsSection = () => {
   const [news, setNews] = useState([])
 
   useEffect(() => {
-    fetch('/source/news.json').then(res => res.json()).then(data => setNews(data))
+    fetch('/source/news.json').then(res => res.json()).then(data => setNews(data.map((news, index) => ({ ...news, id: index + 1 , link: `/news/${index + 1}`, source: `/news/${index + 1}` }))))
   }, [])
   return (
     <div className="section">

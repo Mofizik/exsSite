@@ -11,7 +11,7 @@ const PageContent = ({ params }) => {
     useEffect(() => {
       fetch('/source/news.json')
         .then(res => res.json())
-        .then(data => setNews(data))
+        .then(data => setNews(data.map((news, index) => ({ ...news, id: index + 1 }))))
     }, [])
 
     const oneNews = news.find(item => item.id == params.newsid)

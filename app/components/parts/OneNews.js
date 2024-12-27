@@ -5,7 +5,7 @@ const OneNews = (props) => {
   return (
     <div className={styles.oneNews}>
         <div className={styles.imageContainer}>
-            <Link href={props.link} className="newsLink"><img src={props.image} className={styles.newsImage} alt="" /></Link>
+            <Link href={props.image} className="newsLink"><img src={props.image} className={styles.newsImage} alt="" /></Link>
         </div>
         <div className="sidePageText">
             <span className="date">{props.date}</span>

@@ -11,7 +11,16 @@ const PageContent = () => {
     useEffect(() => {
       fetch('/source/services.json')
         .then(res => res.json())
-        .then(data => setServices(data))
+        .then(data => {
+            const updatedServices = data.map((service, index) => (
+                { 
+                    ...service, 
+                    id: index + 1 ,
+                    link: `/service/${index + 1}`, 
+                    source: `/service/${index + 1}`
+                }));
+            setServices(updatedServices)
+        })
     }, [])
   return (
     <main>

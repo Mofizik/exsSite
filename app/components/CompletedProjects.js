@@ -5,7 +5,7 @@ import Link from 'next/link'
 const CompletedProjects = () => {
   const [projectsList, setProjectsList] = useState([])
   useEffect(() => {
-    fetch('/source/projects.json').then(res => res.json()).then(data => setProjectsList(data))
+    fetch('/source/projects.json').then(res => res.json()).then(data => setProjectsList(data.map((project, index) => ({ ...project, id: index + 1 , link: `/projects/${index + 1}`, source: `/projects/${index + 1}` }))))
   }, [])
   return (
     <div className="rightPart">

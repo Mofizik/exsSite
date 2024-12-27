@@ -136,7 +136,9 @@ h1.title:after, h1.title:before, h2.title:after, h2.title:before {
 .newsImage{
   width: 290px;
   height: 145px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
 }
 .date{
   color: var(--gray);

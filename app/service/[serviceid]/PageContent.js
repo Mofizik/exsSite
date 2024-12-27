@@ -11,7 +11,7 @@ const PageContent = ({ params }) => {
   useEffect(() => {
     fetch('/source/services.json')
       .then(res => res.json())
-      .then(data => setService(data));
+      .then(data => setService(data.map((service, index) => ({ ...service, id: index + 1 }))));
   }, []);
 
   const service = services.find(service => service.id == params.serviceid);

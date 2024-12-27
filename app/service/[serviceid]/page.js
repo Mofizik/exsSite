@@ -12,8 +12,8 @@ export const generateStaticParams = async () => {
     const services = JSON.parse(fileContent);
     
     // Map the news items to params
-    return services.map(item => ({
-      serviceid: item.id.toString(),
+    return services.map((item, index) => ({
+      serviceid: (index + 1).toString(),
       fallback: 'blocking',
       revalidate: 3600
     }));
@@ -23,5 +23,5 @@ const page = ( {params} ) => {
       <PageContent params={params} />
   )
 }
-export const revalidate = 10;
+export const revalidate = 3600;
 export default page;

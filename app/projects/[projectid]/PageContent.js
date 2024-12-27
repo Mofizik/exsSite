@@ -11,12 +11,17 @@ const PageContent = ({ params }) => {
   useEffect(() => {
     fetch('/source/projects.json')
       .then(res => res.json())
-      .then(data => setProjects(data));
+      .then(data => {
+        setProjects(data.map((project, index) => ({ ...project, id: index + 1 })));
+        
+      });
+      
   }, []);
 
   const project = projects.find(project => project.id == params.projectid);
 
   if (!project) {
+    console.log(projects)
     return <div>Loading...</div>;
   }
 

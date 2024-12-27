@@ -12,8 +12,8 @@ export const generateStaticParams = async () => {
     const projects = JSON.parse(fileContent);
     
     // Map the news items to params
-    return projects.map(item => ({
-      projectid: item.id.toString(),
+    return projects.map((project, index) => ({
+      projectid: (index + 1).toString(),
       fallback: 'blocking',
       revalidate: 3600
     }));
