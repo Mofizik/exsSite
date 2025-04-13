@@ -7,7 +7,7 @@ const OneNews = (props) => {
         <div className={styles.imageContainer}>
             <Link href={props.image} className="newsLink"><img src={props.image} className={styles.newsImage} alt="" /></Link>
         </div>
-        <div className="sidePageText">
+        <div className={styles.newsText}>
             <span className="date">{props.date}</span>
             <br />
             <Link href={props.link}><h4 className="sidePageTitle">{props.title}</h4></Link>

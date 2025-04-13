@@ -19,7 +19,7 @@ const PageContent = () => {
         <div className="section">
             <div className="container">
                 <div className="sidePage">
-                    <div className="leftPart">
+                    <div className="newsContent">
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/" className='link'>Главная страница</Link></li>
@@ -29,7 +29,6 @@ const PageContent = () => {
                         <h1 className="title">В данный момент работы ведутся</h1>
                         {news.map(news => <OneNews key={news.id} {...news}></OneNews>)}
                     </div>
-                    <CompletedProjects></CompletedProjects>
                 </div>
             </div>
         </div>
