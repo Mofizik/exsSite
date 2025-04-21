@@ -169,6 +169,7 @@ h1.title:after, h1.title:before, h2.title:after, h2.title:before {
   display: flex;
   justify-content: center;
 }
+
 .section:nth-child(2n-1){
   background-color: #c1c9e1;
 }

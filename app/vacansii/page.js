@@ -88,7 +88,6 @@ const page = () => {
                 </ul>
               </div>
             </div>
-            <CompletedProjects></CompletedProjects>
             
           </div>
         </div>

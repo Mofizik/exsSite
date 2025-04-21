@@ -7,7 +7,7 @@ const page = () => {
   return (
     <main>
         <Header></Header>
-        <div className="section">
+        <div className="section" style={{minHeight: '67.95vh'}}>
             <div className="container">
                 <div className="sidePage">
                     <div className="leftPart">
@@ -47,7 +47,6 @@ const page = () => {
                           </tbody></table>
                       </div>
                     </div>
-                    <CompletedProjects></CompletedProjects>
                 </div>
             </div>
         </div>

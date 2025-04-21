@@ -25,7 +25,7 @@ const PageContent = () => {
   return (
     <main>
         <Header></Header>
-        <div className="section">
+        <div className="section" >
             <div className="container">
                 <div className="sidePage">
                     <div className="leftPart">
@@ -38,7 +38,6 @@ const PageContent = () => {
                         <h1 className="title">Обслуживание</h1>
                         {services.map(service => <Service key={service.id} {...service}></Service>)}
                     </div>
-                    <CompletedNews></CompletedNews>
                 </div>
             </div>
         </div>

@@ -57,7 +57,6 @@ const page = () => {
                         </div>
                     </div>
                     </div>
-                    <CompletedProjects></CompletedProjects>
                     
                 </div>
             </div>

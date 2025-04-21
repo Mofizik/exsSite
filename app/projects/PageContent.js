@@ -41,7 +41,6 @@ const PageContent = ({ params }) => {
               <h1 className="title">Выполненные проекты</h1>
               {projects.map(project => <Project key={project.id} {...project}></Project>)}
             </div>
-            <CompletedNews></CompletedNews>
           </div>
         </div>
       </div>
