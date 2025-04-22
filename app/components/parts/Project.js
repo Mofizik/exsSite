@@ -2,11 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 const Project = (props) => {
   return (
-    <div className='projectItem'>
-        <div className='projectImage'>
+    <div className='itemCardItem'>
+        <div className='itemCardImage'>
             <img src={props.image} alt="" />
         </div>
-        <div className='projectText'>
+        <div className='itemCardText'>
             <Link href={props.source}><h4 className="sidePageTitle">{props.title}</h4></Link>
             {props.description}
 

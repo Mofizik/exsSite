@@ -200,10 +200,10 @@ h1.title:after, h1.title:before, h2.title:after, h2.title:before {
 .review{
   display: flex;
 }
-.reviewImageContainer, .projectImage{
+.reviewImageContainer, .itemCardImage{
   width: 25%;
 }
-.reviewText, .projectText{
+.reviewText, .itemCardText{
   width: 75%;
 }
 .reviewImage{
@@ -315,7 +315,7 @@ h2.title{
 .rightPart .title{
   padding-left: 15px;
 }
-.project{
+.itemCard{
   padding: 0 15px;
   margin-bottom: 16px;
 }
@@ -533,16 +533,16 @@ td{
   width: 260px;
   height: 130px;
 }
-.projectItem{
+.itemCardItem{
   display: flex;
   margin-bottom: 24px;
 }
-.projectImage{
+.itemCardImage{
   margin-bottom: 1.5rem;
   margin-top: 0.25rem;
   padding: 0 15px;
 }
-.projectText{
+.itemCardText{
   padding-left: 1.5rem;
   padding-right: 15px;
 }
@@ -645,10 +645,10 @@ hr{
     position: relative;
     cursor: pointer;
   }
-  .innerSection, .newsList, .services, .reviews, .contacts, .footerContent, .center, .sidePage, .projectItem{
+  .innerSection, .newsList, .services, .reviews, .contacts, .footerContent, .center, .sidePage, .itemCardItem{
     flex-direction: column;
   }
-  .newsItem, .service, .review, .contact, .leftPart, .rightPart, .sidePageText, .projectImage, .projectText, .feedBackContent{  
+  .newsItem, .service, .review, .contact, .leftPart, .rightPart, .sidePageText, .itemCardImage, .itemCardText, .feedBackContent{  
     width: 100%;
   }
   .newsImage, .serviceImage, .reviewImageContainer , .reviewImage, .newsItemImage{
@@ -680,7 +680,7 @@ hr{
   .center{
     align-items: center;
   }
-  .sidePageText,.rightPart, .project, .projectImage, .projectText{
+  .sidePageText,.rightPart, .itemCard, .itemCardImage, .itemCardText{
     padding: 0;
   }
   .rightPart .title{
