@@ -154,16 +154,12 @@ h1.title:after, h1.title:before, h2.title:after, h2.title:before {
 }
 .newsItem{
   margin-bottom: 15px;
-  width: 290px;
 }
 .newsButton{
   border: 1px solid white;
 }
 .newsContent{
   width: 100%;
-  display : flex;
-  flex-wrap: wrap;
-  gap: 24px;
 }
 .center{
   display: flex;

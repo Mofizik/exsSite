@@ -19,7 +19,7 @@ const PageContent = () => {
         <div className="section">
             <div className="container">
                 <div className="sidePage">
-                    <div className="newsContent">
+                    <div className="leftPart">
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><Link href="/" className='link'>Главная страница</Link></li>

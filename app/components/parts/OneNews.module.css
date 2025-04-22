@@ -1,12 +1,10 @@
 .oneNews {
     margin-bottom: 24px;
     display: flex;
-    width: calc(50% - 12px);
 }
 
 .imageContainer {
-    width: 150px;
-    height: 150px;
+    width: 25%;
     position: relative;
     overflow: hidden; 
     margin-top: 4px;
@@ -15,12 +13,10 @@
 .newsText{
     width: 85%;
     margin-left: 15px;
-    font-size: 14px;
 }
 .newsImage {
     height: 100%;
     object-fit: cover;
-    
 }
 .newsTitle{
     color: #38509e;
