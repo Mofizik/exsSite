@@ -8,7 +8,7 @@ const Project = (props) => {
         </div>
         <div className='itemCardText'>
             <Link href={props.source}><h4 className="sidePageTitle">{props.title}</h4></Link>
-            {props.description}
+            <span className="textSpan">{props.description}</span>
 
         </div>
     </div>

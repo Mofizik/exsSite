@@ -9,7 +9,7 @@ const OneService = (props) => {
             <Link href={props.link}>
                 <h4 className="sidePageTitle">{props.title}</h4>
             </Link>
-            {props.text}
+            <span className="textSpan">{props.text}</span>
         </div>
 
     </div>
